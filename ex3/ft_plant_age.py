@@ -1,20 +1,18 @@
 # ########################################################################### #
 #                                                                             #
 #                                                          :::      ::::::::  #
-#   ft_hello_garden.py                                   :+:      :+:    :+:  #
+#   ft_plant_age.py                                      :+:      :+:    :+:  #
 #                                                      +:+ +:+         +:+    #
 #   By: fschnorr <fschnorr@student.42berlin.de>      +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
-#   Created: 2026/02/11 11:17:13 by fschnorr            #+#    #+#            #
-#   Updated: 2026/02/13 14:16:31 by fschnorr           ###   ########.fr      #
+#   Created: 2026/02/11 12:41:00 by fschnorr            #+#    #+#            #
+#   Updated: 2026/02/13 14:19:30 by fschnorr           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
-"""Exercise 0 - Hello Garden.
-
-This module exposes a small function used by main.py.
-"""
-
-
-def ft_hello_garden() -> None:
-    print("Hello, Garden Community!")
+def ft_plant_age() -> None:
+    age = int(input("Enter plant age in days: "))
+    if age > 60:
+        print("Plant is ready to harvest!")
+    else:
+        print("Plant needs more time to grow.")

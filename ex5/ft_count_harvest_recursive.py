@@ -1,20 +1,22 @@
 # ########################################################################### #
 #                                                                             #
 #                                                          :::      ::::::::  #
-#   ft_hello_garden.py                                   :+:      :+:    :+:  #
+#   ft_count_harvest_recursive.py                        :+:      :+:    :+:  #
 #                                                      +:+ +:+         +:+    #
 #   By: fschnorr <fschnorr@student.42berlin.de>      +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
-#   Created: 2026/02/11 11:17:13 by fschnorr            #+#    #+#            #
-#   Updated: 2026/02/13 14:16:31 by fschnorr           ###   ########.fr      #
+#   Created: 2026/02/11 12:58:49 by fschnorr            #+#    #+#            #
+#   Updated: 2026/02/13 14:19:13 by fschnorr           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
-"""Exercise 0 - Hello Garden.
+def ft_count_harvest_recursive() -> None:
+    days = int(input("Days until harvest: "))
 
-This module exposes a small function used by main.py.
-"""
-
-
-def ft_hello_garden() -> None:
-    print("Hello, Garden Community!")
+    def count(day) -> None:
+        if day > days:
+            return
+        print(f"Day {day}")
+        count(day + 1)
+    count(1)
+    print("Harvest time!")
