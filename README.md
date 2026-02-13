@@ -6,7 +6,7 @@ Dieses Repository enthält meine Umsetzung des Subjects **"Growing Code - Python
 
 - Datei: `_docs/en.subject.pdf`
 - Fokus: Python-Grundlagen über 8 Übungen (`ex0` bis `ex7`)
-- Abgabeprinzip: pro Exercise nur die geforderte Funktion, kein eigenes `main` in den Abgabedateien
+- Abgabeprinzip: pro Exercise nur die geforderte Funktion, kein eigenes `main` in den Abgabedateien (die `main.py` befindet sich in `_docs/`)
 
 ## Lernziele aus dem Subject
 
